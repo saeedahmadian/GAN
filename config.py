@@ -20,10 +20,10 @@ flags.DEFINE_integer("num_features", nfeature, "number of features")
 
 
 # training parameters
-flags.DEFINE_integer("epoch", 10000, "number of epochs t train")
-flags.DEFINE_float("learning_rate", 0.0002, "learning rate of optimizer")
-flags.DEFINE_float("momentum", 0.5, "momentum  of optimizer")
-flags.DEFINE_integer("batch_size", 32, "batch size for training")
+flags.DEFINE_integer("epoch", 1000, "number of epochs t train")
+flags.DEFINE_float("learning_rate", 0.02, "learning rate of optimizer")
+flags.DEFINE_float("momentum", 0.2, "momentum  of optimizer")
+flags.DEFINE_integer("batch_size", 64, "batch size for training")
 flags.DEFINE_string("checkpoint_dir", "checkpoint", "directory name to save the checkpoints")
 
 args = flags.FLAGS
